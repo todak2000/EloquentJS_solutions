@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+}
+.container{
+	padding-left: 0;
+	padding-right: 0;
+	margin:0;
+}
+#left-side{
+	width: 50%;
+	height: 100vh;
+	float: left;
+	background-color: #808080;
+	
+}
+#right-side{
+	width: 50%;
+	height: 100vh;
+	float: right;
+	background-color: #909090;
+}
+.div-hide{
+	display: none;
+}
+.excercise{
+	width: 70%;
+	background-color: #ababab;
+	border-radius: 5px;
+	padding: 15px;
+	margin:auto 10%;
+}
+.solution{
+	width: 90%;
+	height: 300px;
+	background-color: #232323;
+	border-radius: 5px;
+	padding: 15px;
+	color: #bbbbbb;
+	margin: 20% 5% auto 5%;
+}

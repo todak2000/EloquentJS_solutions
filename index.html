@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Program Structure Excercises</title>
+
+    
+    <!-- Bootstrap -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles_ejs.css">
+    <!-- fontawesome script -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container">
+    	<div id="left-side">
+            <h3 align="center">Eloquent JavaScript</h3>
+            <h3 align="center">Chapter Three Excercises</h3>
+            <!-- EXCERCISE ONE DETAILS BEGINS HERE -->
+            <button  style="margin-left:20px;" class="btn-info" onclick="toggleExcercise1()">Looping a triangle</button><br><br>
+            <div align="justify" class="div-hide excercise" id="excercise1">
+                <p>Write a loop that makes seven calls to console.log to output the following triangle:<br>
+                        #<br>
+                        ##<br>
+                        ###<br>
+                        ####<br>
+                        #####<br>
+                        ######<br>
+                        #######
+                </p>
+                <button id="solution1" class="btn-success" onclick="toggleSolution1()">Check Answer</button>
+            </div>
+             <!-- EXCERCISE TWO DETAILS BEGINS HERE -->
+              <button  style="margin-left:20px;" class="btn-info" onclick="toggleExcercise2()">FizzBuzz</button><br><br>
+            <div align="justify" class="div-hide excercise" id="excercise2">
+                <p>Write a program that uses console.log to print all the numbers from 1 to 100,
+                with two exceptions. For numbers divisible by 3, print "Fizz" instead of the
+                number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
+                When you have that working, modify your program to print "FizzBuzz", for
+                numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz"
+                for numbers divisible by only one of those).
+                (This is actually an interview question that has been claimed to weed out
+                a significant percentage of programmer candidates. So if you solved it, your
+                labor market value just went up.)
+                </p>
+                <button id="solution2" class="btn-success" onclick="toggleSolution2()">Check Answer</button>
+            </div>
+            <!-- EXCERCISE THREE DETAILS BEGINS HERE -->
+              <button  style="margin-left:20px;" class="btn-info" onclick="toggleExcercise3()">Chess board</button><br><br>
+            <div align="justify" class="div-hide excercise" id="excercise3">
+                <p>Write a program that creates a string that represents an 8×8 grid, using newline
+                    characters to separate lines. At each position of the grid there is either a space
+                    or a "#" character. The characters should form a chess board.
+                    Passing this string to console.log should show something like this:<br>
+                    # # # #<br>
+                    # # # #<br>
+                    # # # #<br>
+                    # # # #<br>
+                    # # # #<br>
+                    # # # #<br>
+                    # # # #<br>
+                    # # # #<br>
+                    When you have a program that generates this pattern, define a binding size
+                    = 8 and change the program so that it works for any size, outputting a grid
+                    of the given width and height.
+                </p>
+                <button id="solution3" class="btn-success" onclick="toggleSolution3()">Check Answer</button>
+            </div>
+        </div>
+        <!-- END OF LEFT SIDE (QUESTION SIDE) -->
+        <div id="right-side">
+            <h3 align="center">Eloquent JavaScript</h3>
+            <h3 align="center">Chapter Three Solutions</h3>
+        <!-- SOLUTION ONE DETAILS BEGINS HERE -->
+             <div class="div-hide solution" id="solutionOne">
+                <p>for ( let ash = "#"; ash.length < = 7; ash + = "#" ) {<br>
+                        console.log ( ash );<br>
+                    }
+                </p>
+                <button id="closeSolution1" class="btn-warning" onclick="toggleClose1()">Close</button>
+
+            </div>
+            <!-- SOLUTION TWO DETAILS BEGINS HERE -->
+             <div class="div-hide solution" id="solutionTwo">
+                <p>Write a loop that makes seven calls to console.log to output the following triangle:<br>
+                        #<br>
+                        ##<br>
+                        ###<br>
+                        ####<br>
+                        #####<br>
+                        ######<br>
+                        #######
+                </p>
+                <button id="closeSolution2" class="btn-warning" onclick="toggleClose2()">Close</button>
+
+            </div>
+            <!-- SOLUTION THRE DETAILS BEGINS HERE -->
+             <div class="div-hide solution" id="solutionThree">
+                <p>Write a loop that makes seven calls to console.log to output the following triangle:<br>
+                        #<br>
+                        ##<br>
+                        ###<br>
+                        ####<br>
+                        #####<br>
+                        ######<br>
+                        #######
+                </p>
+                <button id="closeSolution3" class="btn-warning" onclick="toggleClose3()">Close</button>
+
+            </div>
+        </div>
+    </div>
+   
+<!-- 
+    jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/indexjs.js"></script>
+   
+  </body>
+</html>
