@@ -48,15 +48,16 @@
             <div align="justify" class="div-hide excercise" id="excercise2">
                 <p>Write a program that uses console.log to print all the numbers from 1 to 100,
                 with two exceptions. For numbers divisible by 3, print "Fizz" instead of the
-                number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
+                number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.<br><br>
                 When you have that working, modify your program to print "FizzBuzz", for
                 numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz"
-                for numbers divisible by only one of those).
+                for numbers divisible by only one of those).<br>
                 (This is actually an interview question that has been claimed to weed out
                 a significant percentage of programmer candidates. So if you solved it, your
                 labor market value just went up.)
                 </p>
                 <button id="solution2" class="btn-success" onclick="toggleSolution2()">Check Answer</button>
+                 <button id="solution2a" class="btn-success" onclick="toggleSolution2a()">Check Answer for Modified Question</button>
             </div>
             <!-- EXCERCISE THREE DETAILS BEGINS HERE -->
               <button  style="margin-left:20px;" class="btn-info" onclick="toggleExcercise3()">Chess board</button><br><br>
@@ -95,28 +96,51 @@
             </div>
             <!-- SOLUTION TWO DETAILS BEGINS HERE -->
              <div class="div-hide solution" id="solutionTwo">
-                <p>Write a loop that makes seven calls to console.log to output the following triangle:<br>
-                        #<br>
-                        ##<br>
-                        ###<br>
-                        ####<br>
-                        #####<br>
-                        ######<br>
-                        #######
+                <p>for (let number = 1; number<=100; number++){<br>
+                      if (number % 3 == 0){<br>
+                      console.log("fuzz");<br>
+                      }<br>
+                      if (number % 5 == 0){<br>
+                      console.log("Buzz");<br>
+                      }<br>
+                      else{console.log(number);}<br>
+                     
+                    }
                 </p>
                 <button id="closeSolution2" class="btn-warning" onclick="toggleClose2()">Close</button>
 
             </div>
-            <!-- SOLUTION THRE DETAILS BEGINS HERE -->
+            <!-- MODIFIED QUESTION TWO ANSWER -->
+            <div class="div-hide solution" id="solutionTwoa">
+                <p>for (let number = 1; number<=100; number++){<br>
+                      if (number % 3 == 0){<br>
+                      console.log("fuzz");<br>
+                      }<br>
+                      if (number % 5 == 0){<br>
+                      console.log("Buzz");<br>
+                      }<br>
+                      if (number % 3 == 0 && number % 5 == 0){<br>
+                      console.log("FuzzBuzz");<br>
+                      }<br>
+                      else{console.log(number);}<br>
+                     
+                    }
+                </p>
+                <button id="closeSolution2" class="btn-warning" onclick="toggleClose2a()">Close</button>
+
+            </div>
+            <!-- SOLUTION THREE DETAILS BEGINS HERE -->
              <div class="div-hide solution" id="solutionThree">
-                <p>Write a loop that makes seven calls to console.log to output the following triangle:<br>
-                        #<br>
-                        ##<br>
-                        ###<br>
-                        ####<br>
-                        #####<br>
-                        ######<br>
-                        #######
+                <p>var space = " ";<br>
+                    var ash = "#";<br>
+                    for (let i = 1; i <= 8; i ++){<br>
+                      if (i % 2 == 0){<br>
+                      console.log(ash + space + ash + space +ash + space + ash + space)<br> 
+                      }<br>
+                      else{<br>
+                      console.log(space + ash + space + ash + space + ash + space + ash)<br>
+                      }<br>
+                    }
                 </p>
                 <button id="closeSolution3" class="btn-warning" onclick="toggleClose3()">Close</button>
 

@@ -7,9 +7,6 @@ function toggleExcercise1(){
 function toggleSolution1(){
 	alert("Are you sure you want to check the answer to this Challenge?")
  $('#solutionOne').removeClass("div-hide");
-
-
-
 }
 function toggleClose1(){
 	alert("Are you sure you now know how to tackle this type of challenge?")
@@ -26,13 +23,22 @@ function toggleExcercise2(){
 function toggleSolution2(){
 	alert("Are you sure you want to check the answer to this Challenge?")
  $('#solutionTwo').removeClass("div-hide");
+}
 
+function toggleSolution2a(){
+	alert("Are you sure you want to check the answer to this Challenge?")
+ $('#solutionTwoa').removeClass("div-hide");
 
 
 }
 function toggleClose2(){
 	alert("Are you sure you now know how to tackle this type of challenge?")
 	$('#solutionTwo').addClass("div-hide");
+
+}
+function toggleClose2a(){
+	alert("Are you sure you now know how to tackle this type of challenge?")
+	$('#solutionTwoa').addClass("div-hide");
 
 }
 
